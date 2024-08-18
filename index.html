@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi HTML Dasar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Evaluasi HTML</h1>
+    </header>
+    <main>
+        <h2>Pengelolaan Teks</h2>
+        <p>Di bagian ini, Anda akan belajar tentang <strong>penggunaan tag <strong></strong> dan <em>untuk menebalkan dan memiringkan teks</em>. Dengan menggunakan <strong><em>kombinasi kedua tag ini</em></strong>, Anda dapat memberikan penekanan yang berbeda pada teks.</p>
+        <hr>
+        <blockquote>
+            "Satu-satunya batasan dalam memahami masa depan adalah keraguan kita sendiri."
+            <footer>- Franklin D. Roosevelt</footer>
+        </blockquote>
+
+        <h2>Hyperlink dan Gambar</h2>
+        <p>Kunjungi <a href="https://www.orchid-florist.com/blog/asal-usul-anggrek">situs web sejarah dan asal usul anggrek</a></p>
+        <img src="https://cdn0-production-images-kly.akamaized.net/Cbhk5elEA3MVWuED4NS4J6Mch6M=/500x281/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2896557/original/048726000_1567081125-orchid-3479539_1920.jpg" alt="Gambar Bunga Anggrek">
+
+        <h2>Membuat Daftar</h2>
+        <ol>
+            <li>Fluence to speak English</li>
+            <li>Become a programmer</li>
+            <li>Own a business</li>
+        </ol>
+        <ul>
+            <li>Playing badminton</li>
+            <li>Sing while playing guitar</li>
+            <li>Listen to podcast</li>
+        </ul>
+
+        <h2>Tabel Data</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Kota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andi</td>
+                    <td>25</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>Budi</td>
+                    <td>30</td>
+                    <td>Bandung</td>
+                </tr>
+                <tr>
+                    <td>Cici</td>
+                    <td>22</td>
+                    <td>Yogyakarta</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Formulir Pendaftaran</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Pria</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Wanita</label><br><br>
+
+            <label for="city">Kota Tempat Tinggal:</label>
+            <select id="city" name="city">
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="yogyakarta">Yogyakarta</option>
+            </select><br><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Saya setuju dengan syarat dan ketentuan</label><br><br>
+
+            <label for="message">Pesan atau Komentar:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Evaluasi HTML Dasar</p>
+    </footer>
+</body>
+</html>
