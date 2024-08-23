@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Latihan 3: Menggunakan Breakpoints dan Media Queries */
+      @media (max-width: 768px) {
+        aside {
+          display: none;
+        }
+      }
+
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Latihan 1: Membuat Layout Responsif dengan Bootstrap -->
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-3">
+      <h1>Header</h1>
+    </header>
+
+    <!-- Navigasi dan Konten Utama -->
+    <div class="container">
+      <div class="row">
+        <!-- Navigasi -->
+        <nav class="col-12 col-md-4 bg-light p-3">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Konten Utama -->
+        <main class="col-md-8 bg-white p-3">
+          <h2>Main Content</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            dolor sed odio cursus tincidunt.
+          </p>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="col-md-4 bg-secondary text-white p-3 d-none d-md-block">
+          <h2>Sidebar</h2>
+          <p>This is the sidebar content.</p>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>Footer</p>
+    </footer>
+
+    <!-- Latihan 2: Membuat Navbar Responsif -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Latihan 4: Membuat Card Responsif dengan Bootstrap -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card image 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card image 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card image 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latihan 5: Membuat Footer Responsif -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Links</h5>
+            <ul>
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">About</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Info</h5>
+            <p>Email: info@example.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
